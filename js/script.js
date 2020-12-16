@@ -2,8 +2,8 @@ var element = document.getElementById('gioca');
   element.addEventListener('click',
   function() {
     
-    var nutente=Math.floor(Math.random() * 6 )+1);
-    var ncomputer=Math.floor(Math.random() * 6 )+1);
+    var nutente=Math.floor(Math.random() * 6 )+1;
+    var ncomputer=Math.floor(Math.random() * 6 )+1;
     var message="";
     if(nutente>ncomputer){
         message="L'utente ha vinto";
