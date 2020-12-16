@@ -133,6 +133,9 @@
     .m_top_20{
       margin-top: 20px;
     }
+    .m_right_50{
+      margin-right:50px ;
+    }
     .m_right_25{
       margin-right:25px ;
     }
@@ -158,7 +161,10 @@
       margin-left:20px ;
     }
     .m_left_20{
-      margin-left:20px ;
+      margin-left:20px;
+    }
+    .m_left_50{
+      margin-left:50px;
     }
     .m_left15{
       

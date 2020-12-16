@@ -4,9 +4,10 @@ var element = document.getElementById('gioca');
     
     var nutente=Math.floor(Math.random() * 6 )+1;
     var ncomputer=Math.floor(Math.random() * 6 )+1;
-    var message="";
+   
     if(nutente>ncomputer){
         message="L'utente ha vinto";
+       
     }
     else if(nutente<ncomputer){
         message="Il computer ha vinto";
@@ -16,12 +17,17 @@ var element = document.getElementById('gioca');
     }
 
      //caricamento dati
+     document.getElementById("risultato").className='show box  m_top_10  pd_20';  
      document.getElementById("resultU").src = "img/"+nutente+".svg";
      document.getElementById("resultC").src = "img/"+ncomputer+".svg";
-  
-    
-  
-    }    
+     document.getElementById("resultU").className='transition';
+    document.getElementById("resultC").className='transition'; 
+    document.getElementById("esito").innerHTML=
+    '<span class="font_size_25 bold">'+message+'</span>'+
+    '<span>'+ nutente+' - '+ncomputer+'</span>'
+    ; 
+     
+}  
 );   
 
    

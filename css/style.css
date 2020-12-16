@@ -9,6 +9,7 @@ body{
 }
 .box{
     width: 80%;
+    
     border-radius: 5px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
@@ -70,9 +71,9 @@ form .col{
 .hidden{
     opacity: 0;
 }
-.risultato .box{
-    display: flex;
-    
+.player{
+    display:flex;
+    justify-content: center;
 }
 .box .utente, .box .computer{
     width: 50%;
@@ -86,23 +87,44 @@ form .col{
     align-items: center;
 }
 
-.box .utente .avatar .immagine img, .box .computer .avatar .immagine img{
+.box.show .utente .avatar .immagine img, .box.show .computer .avatar .immagine img {
     width: 150px;
     border-radius: 50%;
     background-color: rgba(0, 128, 0, 0.664);
-    transform: rotate(360deg);
-    animation:immagine 2s ;
+    
+}
+.transition{
+    width:50px;
+    animation:dadi 2s ;
+    
+}
+#risultato #esito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-@keyframes immagine {
-  from{
-    transform: rotate(0deg); 
-  }
-  to{
-      transform: rotate(360deg);
-  }
+@keyframes dadi{
+    0%{
+        transform: rotate(360deg) scale(0.1);
+        
+      
+    }
+    25%{
+        transform: translate(360deg)  scale(0.4);
     
-  }
+    }
+    50%{
+        transform: translate(360deg)  scale(0.6); 
+    }
+    75%{
+        transform: translate(360deg)  scale(0.8);
+    }
+     100%{
+        transform: translate(360deg) ;
+     } 
+    }
+
+
 
 

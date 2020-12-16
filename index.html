@@ -11,7 +11,7 @@
 <body>
     <main>
        <!-- section biglietti treno -->
-       <section  class="treno block m_top_50 ms_text_darkblue">
+       <section  class="block m_top_50 ms_text_darkblue">
         <i style="font-size:80px" class="fas fa-dice "></i>
         
         <div class="box m_top_10 ">
@@ -28,38 +28,43 @@
         </div>
     </section>
     <!-- sezione hidden/show risultato -->
-    <section class=" block risultato m_top_50 ms_text_darkblue"">
+    <section class=" block  m_top_50 ms_text_darkblue"">
         <h2>Risultato</h2>
         <!-- box biglietto -->
-        <div  class="box m_top_10  pd_20">
-            <div class="utente  ">
-                <!-- immagine -->
-                <div class="avatar">
-                     <span class="text_tras_up bold font_size_25" >you</span>
-                    <div class="immagine m_top_10">
-                        <img src="https://www.pngrepo.com/download/15281/boy.png" alt="">
+        <div id="risultato" class="box hidden  m_top_10  pd_20">
+            <div class="player">
+                <!-- sezione utente -->
+                <div class="utente">
+                    <!-- immagine -->
+                    <div class="avatar">
+                        <span class="text_tras_up bold font_size_25" >you</span>
+                        <div class="immagine m_top_10">
+                            <img src="https://www.pngrepo.com/download/15281/boy.png" alt="">
+                        </div>
+                    </div>
+                    <!-- sezione dado utente -->
+                    <div  class="infoU m_right_50">
+                        <img id="resultU" src="" alt="">
                     </div>
                 </div>
-                <div  class="infoU m_right_20">
-                    <img class="width_50" id="resultU" src="" alt="">
+                <!-- sezione computer -->
+                <div class="computer">
+                    <div  class="infoC m_left_50">
+                        <img  id="resultC"  src="" alt="">
+                    </div>
+                    <!-- avatar -->
+                    <div class="avatar">
+                        <span class="text_tras_up bold font_size_25" >Computer</span>
+                        <div class="immagine m_top_10">
+                            <img src="https://img.lovepik.com/original_origin_pic/18/08/03/66b982330c5f58edcf253e100a9b68ec.png_wh860.png" alt="">
+                        </div>
+                    </div>
                 </div>
-               
             </div>
             
-            <div class="computer">
+
+            <div id="esito">
                 
-                <div  class="infoC m_left_20">
-                    <img class="width_50" id="resultC"  src="" alt="">
-                </div>
-                
-                
-                <div class="avatar">
-                    <span class="text_tras_up bold font_size_25" >Computer</span>
-                   <div class="immagine m_top_10">
-                       <img src="https://img.lovepik.com/original_origin_pic/18/08/03/66b982330c5f58edcf253e100a9b68ec.png_wh860.png" alt="">
-                   </div>
-               </div>
-             
             </div>
         </div>
 
